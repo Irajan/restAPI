@@ -1,0 +1,35 @@
+
+####
+GET http://localhost:8080/users/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjdhMmM2ZTZhYTBkY2Y3ZDQ5ODU0ZCIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNjI5OTg3NTQ2fQ.WPLa2UgdHYI5q42BA8ftw840uRq4Lxl50DGhZcboj-4
+
+
+####
+GET http://localhost:8080/users/6127a2b4e6aa0dcf7d49854b
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjdhMmM2ZTZhYTBkY2Y3ZDQ5ODU0ZCIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNjI5OTg3NTQ2fQ.WPLa2UgdHYI5q42BA8ftw840uRq4Lxl50DGhZcboj-4
+
+
+### FOR ADMIN ONLY
+POST http://localhost:8080/users/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjdhMmI0ZTZhYTBkY2Y3ZDQ5ODU0YiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTYyOTk4NzYzN30.1rpQoHepnt9J4sbH4R1fb_AUY0prOfKUIu8fzD3ELxg
+Content-Type: application/json
+
+{
+  "email":"user@email.com",
+  "password":"123",
+  "name":"Bob" 
+}
+
+#####
+PATCH http://localhost:8080/users/6127a2c6e6aa0dcf7d49854d
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjdhMmM2ZTZhYTBkY2Y3ZDQ5ODU0ZCIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNjI5OTg3NTQ2fQ.WPLa2UgdHYI5q42BA8ftw840uRq4Lxl50DGhZcboj-4
+Content-Type: application/json
+
+{
+  "name":"Ben"
+}
+
+### FOR ADMIN ONLY
+DELETE http://localhost:8080/users/6127a2c6e6aa0dcf7d49854d
+Authorization: Berer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjdhMmI0ZTZhYTBkY2Y3ZDQ5ODU0YiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTYyOTk4NzYzN30.1rpQoHepnt9J4sbH4R1fb_AUY0prOfKUIu8fzD3ELxg
+

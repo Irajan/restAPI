@@ -1,0 +1,34 @@
+####
+GET http://localhost:8080/posts/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjdhMmM2ZTZhYTBkY2Y3ZDQ5ODU0ZCIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNjI5OTg3NTQ2fQ.WPLa2UgdHYI5q42BA8ftw840uRq4Lxl50DGhZcboj-4
+
+
+####
+GET http://localhost:8080/posts/6127a5c2c501e3d39a2eda06
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjdhMmM2ZTZhYTBkY2Y3ZDQ5ODU0ZCIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNjI5OTg3NTQ2fQ.WPLa2UgdHYI5q42BA8ftw840uRq4Lxl50DGhZcboj-4
+
+
+### FOR ADMIN ONLY
+POST http://localhost:8080/posts/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjdhMmI0ZTZhYTBkY2Y3ZDQ5ODU0YiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTYyOTk5MTk2MX0.HvUWvvDIaionLBO6JiM9ctWu5RAt6tqsEdAn7TJDlC4
+Content-Type: application/json
+
+{
+  "title":"Post 2",
+  "content":"First post from admin" 
+}
+
+### FOR USER WITH GIVEN ID
+PATCH http://localhost:8080/posts/6127b42f2d1a36da241f8c9e
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjdhMzQ1ZTZhYTBkY2Y3ZDQ5ODU1NSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNjI5OTg4MjU1fQ.WLQmRlLtTd9rlWr5rdw4gVKYifAUeR4UdOlfkZFbGUs
+Content-Type: application/json
+
+{
+  "content":"Modified content"
+}
+
+### FOR ADMIN ONLY
+DELETE http://localhost:8080/posts/6127a874c7977dd7f156a0c5
+Authorization:Berer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjdhMzQ1ZTZhYTBkY2Y3ZDQ5ODU1NSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNjI5OTg4MjU1fQ.WLQmRlLtTd9rlWr5rdw4gVKYifAUeR4UdOlfkZFbGUs
+
+
