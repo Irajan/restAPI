@@ -14,7 +14,7 @@ async function create(req, res, next) {
 
 async function fetch(req, res, next) {
   try {
-    const result = await postService.fetch();
+    const result = await postService.fetch(req.query);
 
     res.json(result);
   } catch (err) {

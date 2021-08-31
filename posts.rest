@@ -1,5 +1,9 @@
-####
-GET http://localhost:8080/posts/
+### get users
+GET http://localhost:8080/posts
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjdhMmM2ZTZhYTBkY2Y3ZDQ5ODU0ZCIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNjI5OTg3NTQ2fQ.WPLa2UgdHYI5q42BA8ftw840uRq4Lxl50DGhZcboj-4
+
+#### Filtered Post
+GET http://localhost:8080/posts?_id=612cd133da01a45eae237f6d
 Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjdhMmM2ZTZhYTBkY2Y3ZDQ5ODU0ZCIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNjI5OTg3NTQ2fQ.WPLa2UgdHYI5q42BA8ftw840uRq4Lxl50DGhZcboj-4
 
 
